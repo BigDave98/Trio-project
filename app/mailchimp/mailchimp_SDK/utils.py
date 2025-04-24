@@ -1,6 +1,5 @@
-def parse_mailchimp_contacts(members: list) -> list:
+def parse_mailchimp_contacts(members):
     filtered = []
-
     for member in members:
         email = member.get("email_address")
         merge = member.get("merge_fields", {})
@@ -13,5 +12,4 @@ def parse_mailchimp_contacts(members: list) -> list:
                 "last_name": last_name,
                 "email": email
             })
-
     return filtered

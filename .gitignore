@@ -12,3 +12,7 @@ create_list.py
 
 #Variables
 #.env
+
+#Test coverage
+.coverage
+.pytest_cache
