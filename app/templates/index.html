@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mailchimp CRUD</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Mailchimp CRUD</h1>
+
+    <button type="button" onclick="addContacts()">➕ Create (Adicionar contatos)</button>
+    <button type="button" onclick="window.location.href='/contacts/sync'">📄 Read (Ver contatos)</button>
+    
+  </div>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="popup-message"></span>
+      <br><br>
+      <button onclick="closePopup()">Fechar</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+</html>

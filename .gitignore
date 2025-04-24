@@ -1,0 +1,14 @@
+#Bytecode Python
+__pycache__/
+
+#Virtual Enviroment
+venv/
+
+#IDE config
+.vscode/
+
+#Ignore on project
+create_list.py
+
+#Variables
+#.env
