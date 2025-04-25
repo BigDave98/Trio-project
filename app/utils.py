@@ -8,6 +8,6 @@ def get_client_list_id():
         "server": os.getenv("MAILCHIMP_PREFIX")
     }) 
     
-    list_id = os.getenv("LIST_ID")
+    list_id = os.getenv("MAILCHIMP_LIST_ID")
     
     return client, list_id

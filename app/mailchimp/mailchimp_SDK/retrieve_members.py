@@ -36,7 +36,7 @@ def get_response_retrieve():
         print("Mailchimp API Error")
         print("Status code:", error.status_code)
         print("Message:", error.text)
-        return "Mailchimp API error"
+        return "Mailchimp API error - Retireve"
 
     if not isinstance(response, dict):
         print("❌ Invalid API response format:", response)
