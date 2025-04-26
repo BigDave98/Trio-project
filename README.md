@@ -5,9 +5,37 @@ It fetches first name, last name, and email from the MockAPI and creates subscri
 
 ---
 
+## 📄 Technical Design
+
+📄 Technical Design Document
+You can find the Technical Design here: https://docs.google.com/document/d/1E5SKYuRdy0bSrpib-H1rzo99GIJTqw4GmQ74HAhNoSM/edit?tab=t.0#heading=h.ngj6uth22xd8
+
+The document includes:
+
+Project flow
+
+Folder architecture
+
+Tech stack justifications
+
+Alternatives considered
+
+---
+
 ## 🚀 Demo
 
-✅ Deployed on Railway: [https://trio-project-production.up.railway.app](https://trio-project-production.up.railway.app)
+✅ Deployed on Railway: https://trio-project-production.up.railway.app
+
+---
+
+## 🎥 Video Walkthrough
+
+VIDEO LINK
+
+In this video I explain:
+- How the software works
+- Why I chose this structure and libraries
+- A walkthrough of syncing data from MockAPI to Mailchimp
 
 ---
 
@@ -40,6 +68,35 @@ Returns a list of synced contacts currently in Mailchimp.
 Fetches contacts from MockAPI and adds them to Mailchimp.
 
 ---
+
+## 🏗️ Architecture
+```bash
+/app
+  ├── __init__.py
+  ├── routes.py
+  ├── utils.py
+  ├── mockapi/
+  │    └── mockapi.py
+  └── mailchimp/
+       └── mailchimp_SDK/
+           ├── add_members.py
+           ├── retrieve_members.py
+           └── utils.py
+/tests
+  ├── test_mockapi.py
+  ├── test_mailchimp.py
+  └── test_routes.py
+/static
+  └── styles.css
+/templates
+  └── index.html
+Dockerfile
+docker-compose.yml
+.dockerignore
+.env.example
+requirements.txt
+README.md
+```
 
 ## 🛠 How to Run Locally
 
@@ -86,7 +143,7 @@ docker build -t mailchimp-sync .
 docker run -p 8000:8000 --env-file .env mailchimp-sync
 ```
 
-Then visit: `http://localhost:8000`
+Then visit: `http://localhost:8080`
 
 ---
 
@@ -98,24 +155,6 @@ MAILCHIMP_PREFIX=us8
 MAILCHIMP_LIST_ID=8c21538296
 MOCKAPI_URL=https://challenge.trio.dev/api/v1/contacts
 ```
-
----
-
-## 📄 Technical Design
-
-A full breakdown of the structure, decisions and alternatives is available in the document below:
-📄 [Technical Design (Google Docs)](https://docs.google.com/document/d/your-doc-id-here)
-
----
-
-## 🎥 Video Walkthrough
-
-[![Watch the demo](https://img.shields.io/badge/▶%20Watch%20Walkthrough-blue?style=for-the-badge)](https://www.loom.com/share/your-video-id)
-
-In this video I explain:
-- How the software works
-- Why I chose this structure and libraries
-- A walkthrough of syncing data from MockAPI to Mailchimp
 
 ---
 
