@@ -8,7 +8,7 @@ It fetches first name, last name, and email from the MockAPI and creates subscri
 ## 📄 Technical Design
 
 📄 Technical Design Document
-You can find the Technical Design here: https://docs.google.com/document/d/1E5SKYuRdy0bSrpib-H1rzo99GIJTqw4GmQ74HAhNoSM/edit?tab=t.0#heading=h.ngj6uth22xd8
+You can find the Technical Design here: [https://docs.google.com/document/d/1E5SKYuRdy0bSrpib-H1rzo99GIJTqw4GmQ74HAhNoSM/edit?tab=t.0#heading=h.ngj6uth22xd8](https://docs.google.com/document/d/1E5SKYuRdy0bSrpib-H1rzo99GIJTqw4GmQ74HAhNoSM/edit?usp=sharing)
 
 The document includes:
 
