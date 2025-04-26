@@ -140,7 +140,7 @@ To run the project using Docker, you'll need:
 docker build -t mailchimp-sync .
 
 # Run the container with environment variables
-docker run -p 8000:8000 --env-file .env mailchimp-sync
+docker run -p 8080:8080 --env-file .env mailchimp-sync
 ```
 
 Then visit: `http://localhost:8080`
