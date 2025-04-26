@@ -14,14 +14,14 @@ function showPopup(message) {
     .then(response => response.json())
     .then(data => {
       if (data.errors && data.errors.length > 0) {
-        showPopup(`❌ Erro ao adicionar contatos: ${data.errors.length} falha(s).`);
+        showPopup(`❌ Error adding contacts: ${data.errors.length} falha(s).`);
       } else {
-        showPopup(`✅ ${data.total_created} contato(s) adicionados com sucesso!`);
+        showPopup(`✅ ${data.total_created} contacts added with success!`);
       }
     })
     .catch(error => {
-      console.error("Erro:", error);
-      showPopup("❌ Erro ao conectar com o servidor.");
+      console.error("Error:", error);
+      showPopup("❌ Error connecting to the server.");
     });
   }
   
