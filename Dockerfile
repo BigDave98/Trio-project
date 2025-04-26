@@ -11,12 +11,12 @@ COPY . .
 RUN  pip install -r requirements.txt
 
 # Expose the port that the Flask app runs on
-EXPOSE 8000
+EXPOSE 8080
 
 # Set environment variables required by Flask
 ENV FLASK_APP=run.py
 ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_RUN_PORT=8000
+ENV FLASK_RUN_PORT=8080
 
 # Run the Flask application
-CMD ["gunicorn", "run:app", "-b", "0.0.0.0:8000"]
+CMD ["gunicorn", "run:app", "-b", "0.0.0.0:8080"]
