@@ -3,6 +3,9 @@
 This project is a backend service that synchronizes user contact data from a public MockAPI to a Mailchimp list.
 It fetches first name, last name, and email from the MockAPI and creates subscribers on Mailchimp.
 
+Note: Before using the "Read" functionality in the application, please ensure that you have clicked the "Create" button to populate the Mailchimp list.
+Initially, the Mailchimp audience will be empty, so if you try to "Read" contacts before "Create," no contacts will appear.
+
 ---
 
 ## 📄 Technical Design
@@ -30,7 +33,7 @@ Alternatives considered
 
 ## 🎥 Video Walkthrough
 
-VIDEO LINK
+VIDEO LINK: https://drive.google.com/file/d/1B2_p-J_PVKE31xDR86YLWPwTbmlusOc0/view?usp=sharing
 
 In this video I explain:
 - How the software works
@@ -160,6 +163,6 @@ MOCKAPI_URL=https://challenge.trio.dev/api/v1/contacts
 
 ## 📬 Contact
 
-Made by **Davi Ruas** – [daviruastb@gmail.com](mailto:daviruastb@gmail.com)
+Made by **Davi Ruas** – [daviruasgm1@gmail.com](mailto:daviruasgm1@gmail.com)
 
 > Designed with simplicity and clarity to match real-world API integration scenarios.
